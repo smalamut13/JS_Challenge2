@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script src="assets/javascript/script.js"></script>
+	<title>JavaScript Challenge #2</title>
+</head>
+<body>
+<h1>This is a JavaScript Challenge #2</h1>
+
+<h2>What year were you born in?</h2>
+	<form onsubmit="return false;">
+		<input type="text" id="birthYear">
+		<input type="submit" value="submit" id="submit_button" onclick="age()"/>
+	</form>	
+
+
+	<script>
+		function age(){
+			console.log("testing");
+
+			var age =document.getElementById('birthYear').value;
+		
+			alert("This person is " + (2015 - age) + " years old");
+		}
+	</script>
+
+</body>
+</html>
